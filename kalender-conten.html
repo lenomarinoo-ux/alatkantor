@@ -1,0 +1,169 @@
+from openpyxl import Workbook
+from openpyxl.styles import Font, PatternFill, Alignment
+from openpyxl.utils import get_column_letter
+
+path="/mnt/data/alatkantor_kalender_konten_b2b.xlsx"
+wb=Workbook()
+
+# Theme
+navy="002244"; white="FFFFFF"; blue="1F4E78"
+def hdr(ws, row=1):
+    for cell in ws[row]:
+        cell.fill=PatternFill("solid", fgColor=navy)
+        cell.font=Font(color=white,bold=True)
+        cell.alignment=Alignment(horizontal="center",vertical="center",wrap_text=True)
+
+# Dashboard
+ws=wb.active; ws.title="Dashboard & KPI"
+data=[
+["KALENDER KONTEN B2B — ALATKANTOR"],
+["SEO + AEO + GEO | Referensi index.html dan materi strategi yang diberikan"],
+[],
+["Positioning"],
+["Pusat pengadaan kebutuhan kantor B2B dengan fokus ATK, furniture kantor, Interactive Flat Panel/Smart Board, Videotron, paket pengadaan, dan kebutuhan procurement di Malang/Malang Raya."],
+[],
+["Content Pillars"],
+["Panduan Pengadaan & Procurement"],
+["Perbandingan Produk & Spesifikasi"],
+["Harga, Budget & RAB"],
+["Produk & Kategori"],
+["Edukasi Dasar / Kamus"],
+["Trust, Legalitas, Logistik & Studi Kasus"],
+[],
+["KPI"],
+["Organic impressions"],
+["Organic clicks"],
+["CTR"],
+["Ranking keyword komersial"],
+["Traffic halaman produk"],
+["Klik WhatsApp / inquiry"],
+["Quotation / RAB request"],
+["Visibility brand di AI search"],
+]
+for r,row in enumerate(data,1):
+    ws.cell(r,1,row[0] if row else "")
+ws["A1"].font=Font(size=18,bold=True,color=white); ws["A1"].fill=PatternFill("solid",fgColor=navy)
+ws.merge_cells("A1:H1"); ws.merge_cells("A2:H2"); ws.merge_cells("A5:H5")
+ws.column_dimensions["A"].width=65
+ws["A5"].alignment=Alignment(wrap_text=True,vertical="top")
+
+# Calendar
+cal=wb.create_sheet("Kalender 30 Hari")
+headers=["Hari","Slot","Waktu","Kategori","Judul","Keyword Utama","Keyword Turunan","Pilar","Persona","Intent","Struktur","Repurpose","CTA","Status"]
+cal.append(headers); hdr(cal)
+topics=[
+("ATK","Apa Saja yang Termasuk Alat Tulis Kantor (ATK)?","alat tulis kantor","ATK kantor; perlengkapan kantor; supplier ATK","Edukasi Dasar","Admin & Procurement","Informational"),
+("Furniture","Panduan Lengkap Memilih Kursi Kantor untuk Pengadaan","kursi kantor","kursi kerja; kursi ergonomis; pengadaan kursi","Panduan Pengadaan","Procurement & GA","Commercial"),
+("Budget","Cara Menyusun Budget Pengadaan Furniture Kantor","budget furniture kantor","RAB furniture; anggaran furniture","Harga, Budget & RAB","Finance & Procurement","Commercial"),
+("Smart Board","Interactive Flat Panel vs Proyektor untuk Ruang Meeting","interactive flat panel","smart board; proyektor meeting","Perbandingan","IT & Sarpras","Evaluation"),
+("Furniture","Checklist Furniture untuk Kantor Baru","furniture kantor","meja kantor; kursi kantor; lemari arsip","Panduan Pengadaan","Office Manager","Commercial"),
+("Lemari Arsip","Panduan Memilih Lemari Arsip untuk Kantor","lemari arsip","lemari dokumen; filing cabinet","Perbandingan","Admin & GA","Commercial"),
+("Videotron","Panduan Memilih Videotron Indoor dan Outdoor","videotron","LED display; videotron indoor; outdoor","Panduan Pengadaan","IT & Sarpras","Commercial"),
+("ATK","Cara Mengatur Anggaran Pengadaan ATK Bulanan","anggaran ATK","budget ATK; pengadaan ATK","Harga, Budget & RAB","Finance","Commercial"),
+("Paket","Paket Pengadaan Kantor Baru: Checklist dari Awal","paket pengadaan kantor","inventaris kantor; perlengkapan kantor","Produk & Kategori","Office Manager","Commercial"),
+("Legalitas","Dokumen yang Perlu Disiapkan untuk Pengadaan B2B","dokumen pengadaan B2B","invoice; penawaran; faktur pajak","Trust & Legalitas","Procurement & Finance","Commercial"),
+("ATK","Cara Memilih Supplier ATK untuk Kantor","supplier ATK","distributor ATK; vendor ATK","Perbandingan","Procurement","Commercial"),
+("Smart Board","Fitur Smart Board 4K yang Perlu Dicek Procurement","smart board 4K","interactive flat panel; display interaktif","Perbandingan","IT Procurement","Evaluation"),
+("Furniture","Cara Membuat RAB Pengadaan Furniture Kantor","RAB furniture kantor","RAB kantor; budget furniture","Harga, Budget & RAB","Finance","Commercial"),
+("ATK","Pengadaan ATK Rutin: Sistem Kontrak Bulanan","pengadaan ATK rutin","kontrak ATK; supplier ATK","Panduan Pengadaan","Procurement","Commercial"),
+("Videotron","Apa yang Perlu Ditanyakan ke Vendor Videotron?","vendor videotron","spesifikasi LED; instalasi; maintenance","Panduan Pengadaan","IT & Procurement","Transactional"),
+("Paket","Cara Menyusun Paket Smart Meeting Room","smart meeting room","smart board; furniture meeting","Produk & Kategori","IT Manager","Commercial"),
+("Lokal","Supplier Alat Kantor Malang: Checklist Memilih Vendor","supplier alat kantor Malang","vendor alat kantor Malang; pengadaan Malang","Trust & Local","Procurement Malang","Transactional"),
+("Lokal","Supplier ATK Malang: Apa yang Perlu Dicek?","supplier ATK Malang","distributor ATK Malang; ATK grosir","Trust & Local","Procurement Malang","Transactional"),
+("Lokal","Furniture Kantor Malang untuk Pengadaan B2B","furniture kantor Malang","meja kantor Malang; kursi kantor Malang","Trust & Local","GA & Procurement","Transactional"),
+("Lokal","Smart Board Malang untuk Ruang Meeting","smart board Malang","interactive flat panel Malang","Trust & Local","IT & Sarpras","Transactional"),
+("Lokal","Videotron Malang: Panduan Spesifikasi dan Layanan","videotron Malang","LED display Malang; vendor videotron","Trust & Local","IT & Procurement","Transactional"),
+("Procurement","Pengadaan Alat Kantor dalam Jumlah Besar","pengadaan alat kantor","pengadaan B2B; inventaris jumlah besar","Panduan Pengadaan","Procurement Manager","Transactional"),
+("Budget","Faktor yang Mempengaruhi Biaya Pengadaan Furniture","biaya pengadaan furniture kantor","harga meja; harga kursi; RAB","Harga, Budget & RAB","Finance","Commercial"),
+("ATK","Daftar Kebutuhan ATK Berdasarkan Jumlah Karyawan","kebutuhan ATK kantor","stok ATK; daftar ATK","Panduan Pengadaan","Admin & GA","Informational"),
+("Furniture","Meja Kantor vs Workstation: Mana yang Tepat?","meja kantor","workstation; layout kantor","Perbandingan","GA & Office Manager","Evaluation"),
+("Kursi","Kursi Kerja Ergonomis: Fitur yang Perlu Diperhatikan","kursi kerja ergonomis","ergonomi kursi; kursi kantor","Perbandingan","GA & HR","Informational"),
+("Lemari Arsip","Lemari Arsip Besi vs Kayu","lemari arsip besi","lemari arsip kayu; filing cabinet","Perbandingan","Admin & GA","Evaluation"),
+("AEO/GEO","FAQ Pengadaan Alat Kantor yang Sebaiknya Ada di Website","FAQ pengadaan alat kantor","AEO alat kantor; FAQ procurement","Edukasi Dasar","Marketing & Owner","Informational"),
+("SEO Lokal","SEO Lokal untuk Supplier ATK dan Furniture di Malang","SEO supplier ATK Malang","local SEO; Malang Raya; NAP","Trust & Local","Marketing & Owner","Informational"),
+]
+for i,t in enumerate(topics,1):
+    cat,title,kw,sub,pillar,persona,intent=t
+    vals=[f"Hari {i}",["Pagi","Siang","Sore"][(i-1)%3],["08:30","13:00","16:30"][(i-1)%3],
+          cat,title,kw,sub,pillar,persona,intent,
+          "Answer Block → Supporting Details → Trust Signals → FAQ; E-E-A-T; internal link",
+          "LinkedIn / Instagram / WhatsApp",["Minta Katalog","Minta RAB","Konsultasi","Hubungi Sales"][i%4],"Draft"]
+    cal.append(vals)
+    for c in range(1,len(vals)+1): cal.cell(i+1,c).alignment=Alignment(wrap_text=True,vertical="top")
+for c,w in enumerate([12,12,10,18,52,30,42,28,25,18,55,28,22,14],1):
+    cal.column_dimensions[get_column_letter(c)].width=w
+cal.freeze_panes="A2"; cal.auto_filter.ref=f"A1:N{len(topics)+1}"
+
+# Brief
+br=wb.create_sheet("Template Brief")
+rows=[
+["Bagian","Instruksi"],
+["Judul","Gunakan judul berdasarkan intent dan kebutuhan procurement."],
+["Keyword utama","Satu keyword utama yang relevan."],
+["Keyword turunan","Sinonim, pertanyaan natural, kategori dan entity."],
+["Persona","Procurement, GA, Office Manager, IT/Sarpras, Finance."],
+["Answer Block","Jawaban langsung 2–3 kalimat di awal."],
+["Supporting Details","Spesifikasi, tabel, perbandingan, checklist, proses pengadaan."],
+["Trust Signals","Identitas bisnis, lokasi, kontak, bukti layanan yang benar-benar tersedia."],
+["AEO","FAQ dengan pertanyaan natural dan jawaban ringkas."],
+["GEO","Konsistensi brand, kategori, lokasi, kontak dan entity."],
+["CTA","Minta Katalog / Minta RAB / Konsultasi / Hubungi Sales."],
+["Catatan","Jangan mengarang harga, MOQ, lead time, garansi, legalitas atau klaim proyek."]
+]
+for row in rows: br.append(row)
+hdr(br)
+br.column_dimensions["A"].width=28; br.column_dimensions["B"].width=105
+
+# Keywords
+kwsh=wb.create_sheet("Master Keyword")
+kwsh.append(["Keyword","Intent","Target Page","Cluster","Catatan"]); hdr(kwsh)
+keywords=[
+("alat kantor","Commercial","/index.html","Core","Positioning"),
+("supplier ATK","Commercial B2B","/products.html","ATK",""),
+("distributor ATK","Commercial B2B","/products.html","ATK",""),
+("alat tulis kantor","Informational/Commercial","/products.html","ATK",""),
+("ATK grosir","Commercial B2B","/products.html","ATK",""),
+("furniture kantor","Commercial B2B","/products.html","Furniture",""),
+("meja kantor","Commercial","/products.html","Furniture",""),
+("kursi kantor","Commercial","/products.html","Furniture",""),
+("lemari arsip","Commercial","/products.html","Furniture",""),
+("smart board","Commercial B2B","/products.html","Electronic",""),
+("interactive flat panel","Evaluation","/products.html","Electronic",""),
+("smart board 4K","Commercial","/products.html","Electronic",""),
+("videotron","Commercial B2B","/products.html","Electronic",""),
+("pengadaan alat kantor","Transactional B2B","/packages.html","Procurement",""),
+("pengadaan furniture kantor","Transactional B2B","/packages.html","Procurement",""),
+("pengadaan ATK","Transactional B2B","/products.html","Procurement",""),
+("supplier ATK Malang","Local Commercial","/products.html","Local SEO",""),
+("furniture kantor Malang","Local Commercial","/products.html","Local SEO",""),
+("smart board Malang","Local Commercial","/products.html","Local SEO",""),
+("videotron Malang","Local Commercial","/products.html","Local SEO",""),
+("RAB pengadaan kantor","Commercial","/blog.html","Budget/RAB",""),
+("paket pengadaan kantor","Commercial B2B","/packages.html","Procurement","")
+]
+for row in keywords: kwsh.append(row)
+for c,w in enumerate([38,25,25,24,50],1): kwsh.column_dimensions[get_column_letter(c)].width=w
+kwsh.freeze_panes="A2"
+
+# Roadmap
+rm=wb.create_sheet("Roadmap 6 Bulan")
+rm.append(["Bulan","Fokus","Deliverables"]); hdr(rm)
+road=[
+("1","Foundation","Audit index.html; title/meta; canonical; sitemap/robots; schema; Search Console/Analytics; internal link."),
+("2","Product SEO","Optimasi kategori ATK, Furniture, Elektronik dan halaman produk berdasarkan data faktual."),
+("3","Content Authority","Artikel prioritas; Answer Block; FAQ; internal linking; E-E-A-T."),
+("4","Local SEO","Konsistensi brand, lokasi Malang/Malang Raya, kontak dan bukti layanan."),
+("5","B2B Conversion","Paket pengadaan; CTA WhatsApp; RAB/quotation; FAQ; trust signals."),
+("6","AEO/GEO Refinement","Audit direct answers, entity consistency, schema, indexing dan performa konten.")
+]
+for row in road: rm.append(row)
+for c,w in enumerate([12,28,110],1): rm.column_dimensions[get_column_letter(c)].width=w
+
+for sh in wb.worksheets:
+    sh.sheet_view.showGridLines=False
+    for row in sh.iter_rows():
+        for cell in row: cell.alignment=Alignment(wrap_text=True,vertical="top")
+    sh.row_dimensions[1].height=30
+
+wb.save(path)
+print(path)
