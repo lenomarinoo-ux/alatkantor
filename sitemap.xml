@@ -3,7 +3,7 @@
   <!-- Halaman Utama & Navigasi -->
   <url>
     <loc>https://alatkantor.web.id/</loc>
-    <lastmod>2026-08-24</lastmod>
+    <lastmod>2026-08-27</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.00</priority>
   </url>
@@ -27,7 +27,7 @@
   </url>
   <url>
     <loc>https://alatkantor.web.id/blog</loc>
-    <lastmod>2026-08-24</lastmod>
+    <lastmod>2026-08-27</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.85</priority>
   </url>
@@ -38,21 +38,61 @@
     <priority>0.80</priority>
   </url>
 
-  <!-- Artikel Baru (Diterbitkan Senin, 24 Agustus 2026) -->
+  <!-- Artikel Baru (Diterbitkan Kamis, 27 Agustus 2026) -->
   <url>
-    <loc>https://alatkantor.web.id/panduan-pemilihan-kursi-kantor-ergonomis-malang-raya.html</loc>
+    <loc>https://alatkantor.web.id/7-peralatan-kantor-wajib-produktivitas-tim</loc>
+    <lastmod>2026-08-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://alatkantor.web.id/checklist-atk-bulanan-perusahaan-sekolah</loc>
+    <lastmod>2026-08-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
+    <loc>https://alatkantor.web.id/cara-menghemat-pengeluaran-atk-kantor-grosir</loc>
+    <lastmod>2026-08-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+  </url>
+
+  <!-- Artikel Sebelumnya (Diterbitkan Rabu, 26 Agustus 2026) -->
+  <url>
+    <loc>https://alatkantor.web.id/panduan-pemilihan-meja-kerja-hpl-malang</loc>
+    <lastmod>2026-08-26</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://alatkantor.web.id/tips-memilih-meja-lipat-training-kantor</loc>
+    <lastmod>2026-08-26</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
+    <loc>https://alatkantor.web.id/toko-meja-kantor-terdekat-malang</loc>
+    <lastmod>2026-08-26</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+  </url>
+
+  <!-- Artikel Sebelumnya (Diterbitkan Senin, 24 Agustus 2026) -->
+  <url>
+    <loc>https://alatkantor.web.id/panduan-pemilihan-kursi-kantor-ergonomis-malang-raya</loc>
     <lastmod>2026-08-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.80</priority>
   </url>
   <url>
-    <loc>https://alatkantor.web.id/tips-memilih-kursi-kerja-hydrolik-mesh.html</loc>
+    <loc>https://alatkantor.web.id/tips-memilih-kursi-kerja-hydrolik-mesh</loc>
     <lastmod>2026-08-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
-    <loc>https://alatkantor.web.id/toko-kursi-kantor-terdekat-malang.html</loc>
+    <loc>https://alatkantor.web.id/toko-kursi-kantor-terdekat-malang</loc>
     <lastmod>2026-08-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
@@ -60,19 +100,19 @@
 
   <!-- Artikel Sebelumnya (Diterbitkan Sabtu, 22 Agustus 2026) -->
   <url>
-    <loc>https://alatkantor.web.id/setup-kelas-interaktif-malang.html</loc>
+    <loc>https://alatkantor.web.id/setup-kelas-interaktif-malang</loc>
     <lastmod>2026-08-22</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.80</priority>
   </url>
   <url>
-    <loc>https://alatkantor.web.id/perbandingan-ukuran-whiteboard-digital-4k.html</loc>
+    <loc>https://alatkantor.web.id/perbandingan-ukuran-whiteboard-digital-4k</loc>
     <lastmod>2026-08-22</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
-    <loc>https://alatkantor.web.id/supplier-filling-cabinet-4-laci-malang.html</loc>
+    <loc>https://alatkantor.web.id/supplier-filling-cabinet-4-laci-malang</loc>
     <lastmod>2026-08-22</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
