@@ -3,7 +3,7 @@
   <!-- Halaman Utama & Navigasi -->
   <url>
     <loc>https://alatkantor.web.id/</loc>
-    <lastmod>2026-08-31</lastmod>
+    <lastmod>2026-09-01</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.00</priority>
   </url>
@@ -27,7 +27,7 @@
   </url>
   <url>
     <loc>https://alatkantor.web.id/blog</loc>
-    <lastmod>2026-08-31</lastmod>
+    <lastmod>2026-09-01</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.85</priority>
   </url>
@@ -38,7 +38,27 @@
     <priority>0.80</priority>
   </url>
 
-  <!-- 3 ARTIKEL TERBARU DITERBITKAN (SENIN, 31 AGUSTUS 2026) -->
+  <!-- 3 ARTIKEL TERBARU DITERBITKAN (SELASA, 1 SEPTEMBER 2026) -->
+  <url>
+    <loc>https://alatkantor.web.id/panduan-memilih-meja-kantor-partisi-workstation-modular.html</loc>
+    <lastmod>2026-09-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://alatkantor.web.id/panduan-memilih-mesin-penghancur-kertas-paper-shredder.html</loc>
+    <lastmod>2026-09-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://alatkantor.web.id/panduan-pengadaan-paket-atk-b2b-b2g-spk-spj.html</loc>
+    <lastmod>2026-09-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.80</priority>
+  </url>
+
+  <!-- Artikel Sebelumnya (Diterbitkan Senin, 31 Agustus 2026) -->
   <url>
     <loc>https://alatkantor.web.id/panduan-pengadaan-smart-board-interaktif-sekolah-kantor.html</loc>
     <lastmod>2026-08-31</lastmod>
@@ -160,19 +180,19 @@
 
   <!-- Artikel Sebelumnya (Diterbitkan Sabtu, 22 Agustus 2026) -->
   <url>
-    <loc>https://alatkantor.web.id/setup-kelas-interaktif-malang</loc>
+    <loc>https://alatkantor.web.id/setup-kelas-interaktif-malang.html</loc>
     <lastmod>2026-08-22</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.80</priority>
   </url>
   <url>
-    <loc>https://alatkantor.web.id/perbandingan-ukuran-whiteboard-digital-4k</loc>
+    <loc>https://alatkantor.web.id/perbandingan-ukuran-whiteboard-digital-4k.html</loc>
     <lastmod>2026-08-22</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
-    <loc>https://alatkantor.web.id/supplier-filling-cabinet-4-laci-malang</loc>
+    <loc>https://alatkantor.web.id/supplier-filling-cabinet-4-laci-malang.html</loc>
     <lastmod>2026-08-22</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
