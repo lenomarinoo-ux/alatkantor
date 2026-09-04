@@ -3,7 +3,7 @@
   <!-- Halaman Utama & Navigasi -->
   <url>
     <loc>https://alatkantor.web.id/</loc>
-    <lastmod>2026-09-03</lastmod>
+    <lastmod>2026-09-04</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.00</priority>
   </url>
@@ -27,7 +27,7 @@
   </url>
   <url>
     <loc>https://alatkantor.web.id/blog</loc>
-    <lastmod>2026-09-03</lastmod>
+    <lastmod>2026-09-04</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.85</priority>
   </url>
@@ -38,7 +38,27 @@
     <priority>0.80</priority>
   </url>
 
-  <!-- 3 ARTIKEL BARU (DITERBITKAN KAMIS, 3 SEPTEMBER 2026) -->
+  <!-- 3 ARTIKEL BARU (DITERBITKAN JUMAT, 4 SEPTEMBER 2026) -->
+  <url>
+    <loc>https://alatkantor.web.id/panduan-memilih-mesin-absensi-fingerprint-vs-face-recognition</loc>
+    <lastmod>2026-09-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://alatkantor.web.id/panduan-memilih-papan-tulis-whiteboard-kantor</loc>
+    <lastmod>2026-09-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://alatkantor.web.id/panduan-efisiensi-pengadaan-alat-tulis-kantor-b2b</loc>
+    <lastmod>2026-09-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.80</priority>
+  </url>
+
+  <!-- Artikel Sebelumnya (Diterbitkan Kamis, 3 September 2026) -->
   <url>
     <loc>https://alatkantor.web.id/panduan-memilih-mesin-laminating-dokumen-kantor</loc>
     <lastmod>2026-09-03</lastmod>
@@ -54,26 +74,6 @@
   <url>
     <loc>https://alatkantor.web.id/strategi-manajemen-kearsipan-fisik-kantor-modern</loc>
     <lastmod>2026-09-03</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.80</priority>
-  </url>
-
-  <!-- Artikel Sebelumnya (Diterbitkan Minggu, 2 Agustus 2026) -->
-  <url>
-    <loc>https://alatkantor.web.id/panduan-memilih-printer-kasir-thermal-bisnis-retail</loc>
-    <lastmod>2026-08-02</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.80</priority>
-  </url>
-  <url>
-    <loc>https://alatkantor.web.id/manfaat-ergonomi-kursi-kantor-kesehatan-karyawan</loc>
-    <lastmod>2026-08-02</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.80</priority>
-  </url>
-  <url>
-    <loc>https://alatkantor.web.id/estimasi-anggaran-pengadaan-alat-tulis-kantor</loc>
-    <lastmod>2026-08-02</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.80</priority>
   </url>
@@ -236,5 +236,25 @@
     <lastmod>2026-08-22</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
+  </url>
+
+  <!-- Artikel Sebelumnya (Diterbitkan Minggu, 2 Agustus 2026) -->
+  <url>
+    <loc>https://alatkantor.web.id/panduan-memilih-printer-kasir-thermal-bisnis-retail</loc>
+    <lastmod>2026-08-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://alatkantor.web.id/manfaat-ergonomi-kursi-kantor-kesehatan-karyawan</loc>
+    <lastmod>2026-08-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://alatkantor.web.id/estimasi-anggaran-pengadaan-alat-tulis-kantor</loc>
+    <lastmod>2026-08-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.80</priority>
   </url>
 </urlset>
