@@ -38,7 +38,13 @@
     <priority>0.80</priority>
   </url>
 
-  <!-- 3 ARTIKEL BARU (DITERBITKAN JUMAT, 4 SEPTEMBER 2026) -->
+  <!-- 4 ARTIKEL BARU (DITERBITKAN JUMAT, 4 SEPTEMBER 2026) -->
+  <url>
+    <loc>https://alatkantor.web.id/pusat-pengadaan-smart-board-ifp-lowokwaru-kota-malang</loc>
+    <lastmod>2026-09-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.80</priority>
+  </url>
   <url>
     <loc>https://alatkantor.web.id/panduan-memilih-mesin-absensi-fingerprint-vs-face-recognition</loc>
     <lastmod>2026-09-04</lastmod>
