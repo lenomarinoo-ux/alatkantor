@@ -3,7 +3,7 @@
   <!-- Halaman Utama & Navigasi -->
   <url>
     <loc>https://alatkantor.web.id/</loc>
-    <lastmod>2026-09-04</lastmod>
+    <lastmod>2026-09-05</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.00</priority>
   </url>
@@ -27,7 +27,7 @@
   </url>
   <url>
     <loc>https://alatkantor.web.id/blog</loc>
-    <lastmod>2026-09-04</lastmod>
+    <lastmod>2026-09-05</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.85</priority>
   </url>
@@ -38,13 +38,27 @@
     <priority>0.80</priority>
   </url>
 
-  <!-- 4 ARTIKEL BARU (DITERBITKAN JUMAT, 4 SEPTEMBER 2026) -->
+  <!-- 3 ARTIKEL BARU (DITERBITKAN SABTU, 5 SEPTEMBER 2026) -->
   <url>
-    <loc>https://alatkantor.web.id/pusat-pengadaan-smart-board-ifp-lowokwaru-kota-malang</loc>
-    <lastmod>2026-09-04</lastmod>
+    <loc>https://alatkantor.web.id/panduan-memilih-printer-barcode-label-kantor-logistik</loc>
+    <lastmod>2026-09-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.80</priority>
   </url>
+  <url>
+    <loc>https://alatkantor.web.id/panduan-penataan-layout-furnitur-kantor-minimalis</loc>
+    <lastmod>2026-09-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://alatkantor.web.id/panduan-memilih-mesin-pemotong-kertas-paper-cutter-kantor</loc>
+    <lastmod>2026-09-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.80</priority>
+  </url>
+
+  <!-- Artikel Sebelumnya (Diterbitkan Jumat, 4 September 2026) -->
   <url>
     <loc>https://alatkantor.web.id/panduan-memilih-mesin-absensi-fingerprint-vs-face-recognition</loc>
     <lastmod>2026-09-04</lastmod>
