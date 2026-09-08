@@ -3,7 +3,7 @@
   <!-- Halaman Utama & Navigasi -->
   <url>
     <loc>https://alatkantor.web.id/</loc>
-    <lastmod>2026-09-07</lastmod>
+    <lastmod>2026-09-08</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.00</priority>
   </url>
@@ -27,7 +27,7 @@
   </url>
   <url>
     <loc>https://alatkantor.web.id/blog</loc>
-    <lastmod>2026-09-07</lastmod>
+    <lastmod>2026-09-08</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.85</priority>
   </url>
@@ -38,7 +38,27 @@
     <priority>0.80</priority>
   </url>
 
-  <!-- 3 ARTIKEL BARU (DITERBITKAN SENIN, 7 SEPTEMBER 2026) -->
+  <!-- 3 ARTIKEL BARU (DITERBITKAN SELASA, 8 SEPTEMBER 2026) -->
+  <url>
+    <loc>https://alatkantor.web.id/sistem-manajemen-inventaris-alat-tulis-kantor</loc>
+    <lastmod>2026-09-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://alatkantor.web.id/tips-memilih-kertas-hvs-kantor-sesuai-kebutuhan</loc>
+    <lastmod>2026-09-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://alatkantor.web.id/standar-keamanan-kearsipan-dokumen-penting-kantor</loc>
+    <lastmod>2026-09-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.80</priority>
+  </url>
+
+  <!-- ARTIKEL SEBELUMNYA (DITERBITKAN SENIN, 7 SEPTEMBER 2026) -->
   <url>
     <loc>https://alatkantor.web.id/efisiensi-pengadaan-alat-tulis-kantor-b2b</loc>
     <lastmod>2026-09-07</lastmod>
