@@ -1,11 +1,15 @@
 # 1. ENGINES & CLEAN URLS (.html Removal)
 RewriteEngine On
 
-# Pengalihan otomatis HTTPS & WWW (Opsional tapi direkomendasikan untuk SEO)
+# Pengalihan otomatis HTTP ke HTTPS
 RewriteCond %{HTTPS} off
 RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
 
-# Mengarahkan URL tanpa .html ke file .html secara otomatis
+# Redirect dari URL ber-ekstensi .html ke Clean URL (301 Permanent Redirect)
+RewriteCond %{THE_REQUEST} ^[A-Z]{3,9}\ /([^/]+)\.html\ HTTP/
+RewriteRule ^%1$ https://%{HTTP_HOST}/%1 [R=301,L]
+
+# Mengarahkan internal Clean URL ke file .html fisik jika ada
 RewriteCond %{REQUEST_FILENAME} !-d
 RewriteCond %{REQUEST_FILENAME}\.html -f
 RewriteRule ^([^\.]+)$ $1.html [NC,L]
@@ -18,7 +22,7 @@ RewriteRule ^([^\.]+)$ $1.html [NC,L]
   AddOutputFilterByType DEFLATE font/ttf font/otf font/woff font/woff2
 </IfModule>
 
-# 3. BROWSER CACHING (Simpan Cache di HP Pengunjung)
+# 3. BROWSER CACHING (Simpan Cache di Perangkat Pengunjung)
 <IfModule mod_expires.c>
   ExpiresActive On
   ExpiresDefault "access plus 1 month"
@@ -33,9 +37,9 @@ RewriteRule ^([^\.]+)$ $1.html [NC,L]
   ExpiresByType image/x-icon "access plus 1 year"
 
   # CSS & JavaScript
-  ExpiresByType text/css "access plus 1 month"
-  ExpiresByType application/javascript "access plus 1 month"
-  ExpiresByType text/javascript "access plus 1 month"
+  ExpiresByType text/css "access plus 1 year"
+  ExpiresByType application/javascript "access plus 1 year"
+  ExpiresByType text/javascript "access plus 1 year"
 
   # Fonts
   ExpiresByType font/ttf "access plus 1 year"
@@ -44,10 +48,11 @@ RewriteRule ^([^\.]+)$ $1.html [NC,L]
   ExpiresByType font/woff2 "access plus 1 year"
 </IfModule>
 
-# 4. OPTIMASI HEADERS (Mencegah Lag dan Menjaga Kinerja Server)
+# 4. OPTIMASI HEADERS & KEEP-ALIVE
 <IfModule mod_headers.c>
   Header unset ETag
   FileETag None
+  Header set Connection keep-alive
   <FilesMatch "\.(ico|jpe?g|png|gif|webp|css|js|woff2)$">
     Header set Cache-Control "max-age=31536000, public"
   </FilesMatch>
