@@ -3,7 +3,7 @@
   <!-- Halaman Utama & Navigasi -->
   <url>
     <loc>https://alatkantor.web.id/</loc>
-    <lastmod>2026-09-09</lastmod>
+    <lastmod>2026-09-11</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.00</priority>
   </url>
@@ -27,7 +27,7 @@
   </url>
   <url>
     <loc>https://alatkantor.web.id/blog</loc>
-    <lastmod>2026-09-09</lastmod>
+    <lastmod>2026-09-11</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.85</priority>
   </url>
@@ -38,7 +38,27 @@
     <priority>0.80</priority>
   </url>
 
-  <!-- 3 ARTIKEL BARU (DITERBITKAN RABU, 9 SEPTEMBER 2026) -->
+  <!-- 3 ARTIKEL BARU (DITERBITKAN JUMAT, 11 SEPTEMBER 2026) -->
+  <url>
+    <loc>https://alatkantor.web.id/manfaat-sistem-kearsipan-lemari-besi-plat-baja</loc>
+    <lastmod>2026-09-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://alatkantor.web.id/metode-anggaran-paket-kelas-baru-tanpa-over-budget</loc>
+    <lastmod>2026-09-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://alatkantor.web.id/vendor-alat-kantor-malang-kuitansi-bermaterei-resmi</loc>
+    <lastmod>2026-09-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.80</priority>
+  </url>
+
+  <!-- ARTIKEL SEBELUMNYA (DITERBITKAN RABU, 9 SEPTEMBER 2026) -->
   <url>
     <loc>https://alatkantor.web.id/smart-board-adalah-definisi-fungsi-manfaat</loc>
     <lastmod>2026-09-09</lastmod>
