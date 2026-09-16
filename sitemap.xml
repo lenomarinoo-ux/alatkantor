@@ -3,7 +3,7 @@
   <!-- Halaman Utama & Navigasi -->
   <url>
     <loc>https://alatkantor.web.id/</loc>
-    <lastmod>2026-09-15</lastmod>
+    <lastmod>2026-09-16</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.00</priority>
   </url>
@@ -27,7 +27,7 @@
   </url>
   <url>
     <loc>https://alatkantor.web.id/blog</loc>
-    <lastmod>2026-09-15</lastmod>
+    <lastmod>2026-09-16</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.85</priority>
   </url>
@@ -38,7 +38,27 @@
     <priority>0.80</priority>
   </url>
 
-  <!-- 3 ARTIKEL BARU (DITERBITKAN SELASA, 15 SEPTEMBER 2026) -->
+  <!-- 3 ARTIKEL TERBARU (DITERBITKAN RABU, 16 SEPTEMBER 2026) -->
+  <url>
+    <loc>https://alatkantor.web.id/jenis-jenis-meja-kantor-cara-memilih-kebutuhan-ruang</loc>
+    <lastmod>2026-09-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://alatkantor.web.id/spesifikasi-smart-board-ifp-android-vs-windows</loc>
+    <lastmod>2026-09-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://alatkantor.web.id/panduan-kearsipan-tata-cara-penataan-dokumen-spj-filling-cabinet</loc>
+    <lastmod>2026-09-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.80</priority>
+  </url>
+
+  <!-- ARTIKEL SEBELUMNYA (DITERBITKAN SELASA, 15 SEPTEMBER 2026) -->
   <url>
     <loc>https://alatkantor.web.id/panduan-pengadaan-smartboard-2026-sekolah-kantor-instansi</loc>
     <lastmod>2026-09-15</lastmod>
