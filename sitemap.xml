@@ -3,7 +3,7 @@
   <!-- Halaman Utama & Navigasi -->
   <url>
     <loc>https://alatkantor.web.id/</loc>
-    <lastmod>2026-09-17</lastmod>
+    <lastmod>2026-09-18</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.00</priority>
   </url>
@@ -27,7 +27,7 @@
   </url>
   <url>
     <loc>https://alatkantor.web.id/blog</loc>
-    <lastmod>2026-09-17</lastmod>
+    <lastmod>2026-09-18</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.85</priority>
   </url>
@@ -38,7 +38,15 @@
     <priority>0.80</priority>
   </url>
 
-  <!-- 3 ARTIKEL TERBARU (DITERBITKAN KAMIS, 17 SEPTEMBER 2026) -->
+  <!-- ARTIKEL TERBARU (DITERBITKAN JUMAT, 18 SEPTEMBER 2026) -->
+  <url>
+    <loc>https://alatkantor.web.id/lemari-arsip-kantor-fungsi-dan-cara-memilih-yang-tepat</loc>
+    <lastmod>2026-09-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.80</priority>
+  </url>
+
+  <!-- 3 ARTIKEL SEBELUMNYA (DITERBITKAN KAMIS, 17 SEPTEMBER 2026) -->
   <url>
     <loc>https://alatkantor.web.id/penyedia-paket-kelas-baru-siap-pakai-malang-raya</loc>
     <lastmod>2026-09-17</lastmod>
