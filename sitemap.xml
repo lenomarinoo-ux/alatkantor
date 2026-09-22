@@ -3,7 +3,7 @@
   <!-- Halaman Utama & Navigasi -->
   <url>
     <loc>https://alatkantor.web.id/</loc>
-    <lastmod>2026-09-21</lastmod>
+    <lastmod>2026-09-22</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.00</priority>
   </url>
@@ -27,7 +27,7 @@
   </url>
   <url>
     <loc>https://alatkantor.web.id/blog</loc>
-    <lastmod>2026-09-21</lastmod>
+    <lastmod>2026-09-22</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.85</priority>
   </url>
@@ -38,7 +38,15 @@
     <priority>0.80</priority>
   </url>
 
-  <!-- ARTIKEL TERBARU (DITERBITKAN SENIN, 21 SEPTEMBER 2026) -->
+  <!-- ARTIKEL TERBARU (DITERBITKAN SELASA, 22 SEPTEMBER 2026) -->
+  <url>
+    <loc>https://alatkantor.web.id/paket-pengadaan-furnitur-sekolah-dan-kantor-surabaya-malang</loc>
+    <lastmod>2026-09-22</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.80</priority>
+  </url>
+
+  <!-- ARTIKEL SEBELUMNYA (DITERBITKAN SENIN, 21 SEPTEMBER 2026) -->
   <url>
     <loc>https://alatkantor.web.id/vendor-alat-kantor-malang-jaminan-dokumen-spj-lengkap</loc>
     <lastmod>2026-09-21</lastmod>
